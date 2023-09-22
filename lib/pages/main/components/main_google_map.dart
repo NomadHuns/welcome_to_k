@@ -11,27 +11,35 @@ class MainGoogleMap extends StatefulWidget {
 }
 
 class _MainGoogleMapState extends State<MainGoogleMap> {
-  final Completer<GoogleMapController> _controller = Completer<GoogleMapController>();
+  final Completer<GoogleMapController> _controller =
+      Completer<GoogleMapController>();
 
   static const CameraPosition _kGooglePlex = CameraPosition(
     target: LatLng(37.42796133580664, -122.085749655962),
     zoom: 14.4746,
   );
 
+  List<Marker> _markers = [
+    Marker(
+        markerId: MarkerId("1"),
+        draggable: true,
+        onTap: () => print("Marker!"),
+        position: LatLng(37.42796133580664, -122.085749655962),
+        icon: BitmapDescriptor.defaultMarkerWithHue(10)),
+  ];
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: GoogleMap(
-        mapType: MapType.normal,
-        initialCameraPosition: _kGooglePlex,
-        myLocationEnabled: true,
-        myLocationButtonEnabled: true,
-        onMapCreated: (GoogleMapController controller) {
-          _controller.complete(controller);
-        },
-      ),
+    return GoogleMap(
+      mapType: MapType.normal,
+      initialCameraPosition: _kGooglePlex,
+      myLocationEnabled: true,
+      myLocationButtonEnabled: true,
+      mapToolbarEnabled: true,
+      onMapCreated: (GoogleMapController controller) {
+        _controller.complete(controller);
+      },
+      markers: Set.from(_markers),
     );
   }
-
 }
-
