@@ -1,13 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:welcome_to_k/constants/padding.dart';
 
-class DetailTag extends StatelessWidget {
-  const DetailTag({super.key});
+class CustomCategoryTag extends StatelessWidget {
+  String text;
+
+  CustomCategoryTag({
+    super.key,
+    required this.text,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 30,
+      height: 40,
       margin: const EdgeInsets.symmetric(horizontal: 5),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
@@ -16,7 +21,11 @@ class DetailTag extends StatelessWidget {
       alignment: Alignment.center,
       child: Padding(
         padding: EdgeInsets.all(small_gap),
-        child: Text('Drama', style: Theme.of(context).textTheme.labelSmall?.copyWith(color: Colors.blue)),
+        child: Text(text,
+            style: Theme.of(context)
+                .textTheme
+                .labelSmall
+                ?.copyWith(color: Colors.blue)),
       ),
     );
   }

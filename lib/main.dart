@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:welcome_to_k/constants/theme.dart';
-import 'package:welcome_to_k/pages/category_list/category_list_page.dart';
-import 'package:welcome_to_k/pages/detail/detail_page.dart';
-import 'package:welcome_to_k/pages/main/main_page.dart';
+import 'package:welcome_to_k/pages/route_list/route_list_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const CategoryListPage(),
+      home: const RouteListPage(),
       theme: theme,
     );
   }

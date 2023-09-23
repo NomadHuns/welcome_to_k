@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:welcome_to_k/constants/padding.dart';
 import 'package:welcome_to_k/pages/detail/components/detail_carousel.dart';
-import 'package:welcome_to_k/pages/detail/components/detail_tag.dart';
+import 'package:welcome_to_k/pages/_common/custom_category_tag.dart';
 
 class DetailPage extends StatelessWidget {
   const DetailPage({super.key});
@@ -22,11 +22,11 @@ class DetailPage extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Row(
+                Row(
                   children: [
-                    DetailTag(),
-                    DetailTag(),
-                    DetailTag(),
+                    CustomCategoryTag(text: 'Drama'),
+                    CustomCategoryTag(text: 'Drama'),
+                    CustomCategoryTag(text: 'Drama'),
                   ],
                 ),
                 SizedBox(height: default_gap),
