@@ -5,5 +5,5 @@ ThemeData theme = ThemeData(
 );
 
 AppBarTheme _appBarTheme = AppBarTheme(
-  color: Color(0x00E4E6ED),
+  color: Color(0xFFE7EAF1),
 );

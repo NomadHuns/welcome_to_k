@@ -10,11 +10,11 @@ class MainPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Welcome2K'),
+        title: Text('Welcome2K', style: Theme.of(context).textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.bold)),
       ),
-      body: const Column(
+      body: Column(
         children: [
-          Expanded(
+          const Expanded(
             child: Stack(
               fit: StackFit.expand,
               children: [
@@ -23,7 +23,10 @@ class MainPage extends StatelessWidget {
               ],
             ),
           ),
-          MainCarousel(),
+          MainCarousel(
+            viewportFraction: 0.8,
+            borderRadius: 8.0,
+          ),
         ],
       ),
     );
