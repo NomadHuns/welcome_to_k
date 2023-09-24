@@ -26,13 +26,14 @@ class MainItem extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("개무서운 골목길",
+              SizedBox(height: small_gap),
+              Text("Fxxking Scary Street",
                   style: Theme.of(context)
                       .textTheme
-                      .headlineMedium
+                      .headlineSmall
                       ?.copyWith(color: Colors.white)),
-              SizedBox(height: large_gap),
-              Text("오징어 게임",
+              SizedBox(height: xlarge_gap),
+              Text("Squid Game",
                   style: Theme.of(context)
                       .textTheme
                       .headlineSmall
@@ -41,12 +42,12 @@ class MainItem extends StatelessWidget {
               Row(
                 children: [
                   const Icon(
-                    FontAwesomeIcons.mapLocationDot,
+                    FontAwesomeIcons.locationDot,
                     color: Color(0xFFF0F0F0),
-                    size: 24,
+                    size: 20,
                   ),
-                  SizedBox(width: default_gap),
-                  Text('부산광역시 부산진구 서면동',
+                  SizedBox(width: small_gap),
+                  Text('1st street, Jeonpo-dong, Busan',
                       style: Theme.of(context)
                           .textTheme
                           .bodyMedium
