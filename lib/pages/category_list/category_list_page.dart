@@ -7,23 +7,17 @@ class CategoryListPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: const Color(0xFFEDEDEF),
-      appBar: AppBar(
-        leading: const Icon(Icons.arrow_back, color: Colors.black),
-      ),
-      body: ListView(
-        children: [
-          CategoryListTitle(text: 'Drama'),
-          CategoryListTile(text: 'MicroWave', imageUrl: 'https://picsum.photos/id/1/200/300'),
-          CategoryListTile(text: 'MicroWave', imageUrl: 'https://picsum.photos/id/1/200/300'),
-          CategoryListTile(text: 'MicroWave', imageUrl: 'https://picsum.photos/id/1/200/300'),
-          CategoryListTitle(text: 'Movie'),
-          CategoryListTile(text: 'MicroWave', imageUrl: 'https://picsum.photos/id/1/200/300'),
-          CategoryListTile(text: 'MicroWave', imageUrl: 'https://picsum.photos/id/1/200/300'),
-          CategoryListTile(text: 'MicroWave', imageUrl: 'https://picsum.photos/id/1/200/300'),
-        ],
-      ),
+    return ListView(
+      children: [
+        CategoryListTitle(text: 'Drama'),
+        CategoryListTile(text: 'MicroWave', imageUrl: 'https://picsum.photos/id/1/200/300'),
+        CategoryListTile(text: 'MicroWave', imageUrl: 'https://picsum.photos/id/1/200/300'),
+        CategoryListTile(text: 'MicroWave', imageUrl: 'https://picsum.photos/id/1/200/300'),
+        CategoryListTitle(text: 'Movie'),
+        CategoryListTile(text: 'MicroWave', imageUrl: 'https://picsum.photos/id/1/200/300'),
+        CategoryListTile(text: 'MicroWave', imageUrl: 'https://picsum.photos/id/1/200/300'),
+        CategoryListTile(text: 'MicroWave', imageUrl: 'https://picsum.photos/id/1/200/300'),
+      ],
     );
   }
 }

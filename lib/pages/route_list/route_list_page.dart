@@ -8,12 +8,8 @@ class RouteListPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: const Color(0xFFEDEDEF),
-      appBar: AppBar(
-        leading: const Icon(Icons.arrow_back, color: Colors.black),
-      ),
-      body: CustomScrollView(
+    return SafeArea(
+      child: CustomScrollView(
         slivers: [
           RouteListCategoryWidget(),
           SliverToBoxAdapter(
