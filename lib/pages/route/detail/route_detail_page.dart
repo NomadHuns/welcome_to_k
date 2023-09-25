@@ -2,8 +2,8 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:welcome_to_k/constants/padding.dart';
-import 'package:welcome_to_k/pages/route_detail/components/route_detail_google_map.dart';
-import 'package:welcome_to_k/pages/route_detail/components/route_detail_item.dart';
+import 'package:welcome_to_k/pages/route/detail/components/route_detail_google_map.dart';
+import 'package:welcome_to_k/pages/route/detail/components/route_detail_item.dart';
 
 class RouteDetailPage extends StatelessWidget {
   const RouteDetailPage({super.key});

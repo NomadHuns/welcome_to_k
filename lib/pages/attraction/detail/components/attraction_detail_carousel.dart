@@ -1,21 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class DetailCarousel extends StatefulWidget {
+class AttractionDetailCarousel extends StatefulWidget {
   double viewportFraction;
   double borderRadius;
 
-  DetailCarousel({
+  AttractionDetailCarousel({
     super.key,
     required this.viewportFraction,
     this.borderRadius = 0,
   });
 
   @override
-  State<DetailCarousel> createState() => _DetailCarouselState();
+  State<AttractionDetailCarousel> createState() => _AttractionDetailCarouselState();
 }
 
-class _DetailCarouselState extends State<DetailCarousel> {
+class _AttractionDetailCarouselState extends State<AttractionDetailCarousel> {
   final images = [
     'https://picsum.photos/id/1/200/300',
     'https://picsum.photos/id/2/200/300',

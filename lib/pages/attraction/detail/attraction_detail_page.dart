@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:welcome_to_k/constants/padding.dart';
-import 'package:welcome_to_k/pages/detail/components/detail_carousel.dart';
 import 'package:welcome_to_k/pages/_common/custom_category_tag.dart';
+import 'package:welcome_to_k/pages/attraction/detail/components/attraction_detail_carousel.dart';
 
-class DetailPage extends StatelessWidget {
-  const DetailPage({super.key});
+class AttractionDetailPage extends StatelessWidget {
+  const AttractionDetailPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class DetailPage extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          DetailCarousel(viewportFraction: 1.0),
+          AttractionDetailCarousel(viewportFraction: 1.0),
           SizedBox(height: default_gap),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: default_gap),

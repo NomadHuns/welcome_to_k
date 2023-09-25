@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:welcome_to_k/constants/my_route.dart';
 import 'package:welcome_to_k/constants/padding.dart';
+import 'package:welcome_to_k/pages/attraction/detail/attraction_detail_page.dart';
 
 class MainItem extends StatelessWidget {
   String imageUrl;
@@ -12,7 +12,7 @@ class MainItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.pushNamed(context, MyRoute.attractionDetailPage);
+        Navigator.push(context, MaterialPageRoute(builder: (context) => AttractionDetailPage()));
       },
       child: Container(
         margin: EdgeInsets.symmetric(horizontal: default_gap),

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:welcome_to_k/pages/category_list/category_list_page.dart';
-import 'package:welcome_to_k/pages/main/main_page.dart';
-import 'package:welcome_to_k/pages/route_list/route_list_page.dart';
+import 'package:welcome_to_k/pages/attraction/list/attrction_list_page.dart';
+import 'package:welcome_to_k/pages/category/list/category_list_page.dart';
+import 'package:welcome_to_k/pages/route/list/route_list_page.dart';
 
 class HomeHolder extends StatefulWidget {
   const HomeHolder({super.key});

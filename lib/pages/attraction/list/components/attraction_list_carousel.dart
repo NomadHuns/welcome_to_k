@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:welcome_to_k/constants/padding.dart';
-import 'package:welcome_to_k/pages/main/components/main_item.dart';
+import 'package:welcome_to_k/pages/attraction/list/components/attraction_list_item.dart';
 
 class MainCarousel extends StatefulWidget {
   double viewportFraction;
